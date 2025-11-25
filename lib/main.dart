@@ -1,3 +1,5 @@
+import 'package:event_booking_app/pages/bottomnav.dart';
+import 'package:event_booking_app/pages/detail_page.dart';
 import 'package:event_booking_app/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -31,8 +33,9 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: Home(),
+      home:DetailPage()
     );
   }
 }
